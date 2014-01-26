@@ -5,7 +5,9 @@
 .wrapper {
 	@include settings(relative, hidden);
 	margin: 0 auto;
-	width: 1200px;
+	//width: 1200px;
+	width: 100%;
+	max-width: 1000px;
 }
 .frame {
 	@include settings(null, null, table);

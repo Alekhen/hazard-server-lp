@@ -14,7 +14,7 @@ body {
 	color: $bodyTextColor;
 	@include font(18, 24, normal, $helvetica);
 	@include settings(relative, auto);
-	@include bg-cover($bodyBackgroundColor, 'red-bg.jpg');
+	@include bg($bodyBackgroundColor);
 	width: 100% !important;
 	//min-width: 1200px;
 	height: 100% !important;

@@ -8,17 +8,105 @@
 
 /* -------------------- PORTRAIT TABLET TO LANDSCAPE AND DESKTOP -------------------- */
 @media (min-width: 768px) and (max-width: 979px) {
-
+	body {
+		//min-width: 768px !important;
+	}
+	.wrapper {
+		//width: auto;
+		//min-width: 768px;
+	}
 }
 
 
 /* -------------------- LANDSCAPE PHONE TO PORTRAIT TABLET -------------------- */
 @media (max-width: 767px) {
-
+	body {
+		min-width: auto !important;
+	}
+	.wrapper {
+		width: auto;
+		max-width: 767px;
+	}
+	#page-header {
+		text-align: center;
+		@include size(null, 130);
+		.wrapper {
+			@include settings(null, null, block);
+			@include size(null, 129);
+		}
+	}
+	#logo {
+		@include settings(null, null, block, none);
+		margin: 14px auto 0;
+	}
+	#contact-links {
+		@include font(15, 18);
+		@include settings(null, null, block, none);
+		margin: 16px 0;
+		ul {
+			text-align: left;
+			@include settings(null, null, null, right);
+			left: -50%;
+			li {
+				left: 50%;
+			}
+		}
+	}
+	#content {
+		h1 {
+			@include font(36, 40);
+			margin: 30px auto 6px;
+		}
+		p {
+			margin: 0 0 30px;
+			@include font(15, 18);
+		}
+	}
 }
 
 
 /* -------------------- LANDSCAPE PHONES AND DOWN -------------------- */
 @media (max-width: 480px) {
+	body {
+		min-width: auto !important;
+		max-width: 480px !important;
+	}
+	.wrapper {
+		max-width: 480px !important;
+		@include settings(null, hidden);
+	}
+	#page-header {
+		@include size(null, 120);
+		.wrapper {
+			@include size(null, 119);
+		}
+	}
+	#contact-links {
+		@include font(14, 16);
+		margin: 12px 0;
+	}
+	#page-footer {
+		.wrapper {
+			padding: 8px 20px;
+		}
+	}
+	#content {
+		h1 {
+			@include font(26, 28);
+		}
+		p {
+			@include font(14, 16);
+		}
+	}
+}
 
+
+/* -------------------- PORTRAIT PHONES AND DOWN -------------------- */
+@media (max-width: 320px) {
+	body {
+		max-width: 320px !important;
+	}
+	.wrapper {
+		max-width: 320px !important;
+	}
 }

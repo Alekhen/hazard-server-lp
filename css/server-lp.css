@@ -9,7 +9,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html { width: 100%; height: 100%; margin: 0; }
 
-body { color: white; font: normal 18px/24px "Helvetica Neue", "HelveticaNeue", Helvetica, Sans-Serif; position: relative; overflow: auto; background: #1a1a1a url(../images/red-bg.jpg) no-repeat center center fixed; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale'); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; width: 100% !important; height: 100% !important; height: auto; min-height: 100%; margin: 0; -moz-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; }
+body { color: white; font: normal 18px/24px "Helvetica Neue", "HelveticaNeue", Helvetica, Sans-Serif; position: relative; overflow: auto; background: #1a1a1a; width: 100% !important; height: 100% !important; height: auto; min-height: 100%; margin: 0; -moz-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; }
 
 h1 { font-size: 48px; line-height: 58px; font-weight: bold; }
 
@@ -47,7 +47,7 @@ option { outline: none; }
 ::selection { color: black; background-color: #eeeeee; }
 
 /* -------------------- GLOBAL CLASSES -------------------- */
-.wrapper { position: relative; overflow: hidden; margin: 0 auto; width: 1200px; }
+.wrapper { position: relative; overflow: hidden; margin: 0 auto; width: 100%; max-width: 1000px; }
 
 .frame { display: table; width: 100%; height: 100% !important; }
 
@@ -89,15 +89,15 @@ option { outline: none; }
 .lowercase { text-transform: lowercase; }
 
 /* -------------------- PAGE HEADER -------------------- */
-#page-header { background: #0d0d0d; height: 100px; }
+#page-header { color: #666; background: #0d0d0d; height: 100px; }
 #page-header .wrapper { vertical-align: middle; border-bottom: 1px solid #666; }
 
 #logo { text-indent: -9999px; background: url(../images/hazard-logo.png) center center no-repeat; background-image: url("../images/hazard-logo.svg"); position: relative; overflow: hidden; display: inline-block; float: left; width: 245px; height: 70px; margin-left: 40px; }
 
 #contact-links { position: relative; overflow: hidden; display: inline-block; float: right; margin: 23px 40px 0 0; }
-#contact-links ul { position: relative; overflow: hidden; }
-#contact-links ul li { position: relative; display: inline-block; float: left; }
-#contact-links ul li:after { content: "|"; position: relative; display: inline-block; margin: 0 12px; }
+#contact-links ul { position: relative; }
+#contact-links ul li { color: #e6e6e6; position: relative; display: inline-block; float: left; }
+#contact-links ul li:after { content: "|"; color: #666; position: relative; display: inline-block; margin: 0 12px; }
 #contact-links ul li:last-child:after { display: none; }
 
 /* -------------------- PAGE FOOTER -------------------- */
@@ -114,6 +114,32 @@ option { outline: none; }
 /* -------------------- PAGE CONTENT -------------------- */
 #content { text-align: center; background: url(../images/beast.jpg) no-repeat center 100px fixed; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale'); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; }
 #content .wrapper { vertical-align: middle; }
-#content h1 { font-size: 46px; line-height: 50px; font-weight: normal; margin-bottom: 6px; }
+#content h1 { font-size: 46px; line-height: 50px; font-weight: normal; }
 #content p span { position: relative; display: block; margin-bottom: 26px; }
 #content p span:last-child { margin-bottom: 0; }
+
+/* -------------------- LARGE DESKTOP -------------------- */
+/* -------------------- PORTRAIT TABLET TO LANDSCAPE AND DESKTOP -------------------- */
+/* -------------------- LANDSCAPE PHONE TO PORTRAIT TABLET -------------------- */
+@media (max-width: 767px) { body { min-width: auto !important; }
+  .wrapper { width: auto; max-width: 767px; }
+  #page-header { text-align: center; height: 130px; }
+  #page-header .wrapper { display: block; height: 129px; }
+  #logo { display: block; float: none; margin: 14px auto 0; }
+  #contact-links { font-size: 15px; line-height: 18px; display: block; float: none; margin: 16px 0; }
+  #contact-links ul { text-align: left; float: right; left: -50%; }
+  #contact-links ul li { left: 50%; }
+  #content h1 { font-size: 36px; line-height: 40px; margin: 30px auto 6px; }
+  #content p { margin: 0 0 30px; font-size: 15px; line-height: 18px; } }
+/* -------------------- LANDSCAPE PHONES AND DOWN -------------------- */
+@media (max-width: 480px) { body { min-width: auto !important; max-width: 480px !important; }
+  .wrapper { max-width: 480px !important; overflow: hidden; }
+  #page-header { height: 120px; }
+  #page-header .wrapper { height: 119px; }
+  #contact-links { font-size: 14px; line-height: 16px; margin: 12px 0; }
+  #page-footer .wrapper { padding: 8px 20px; }
+  #content h1 { font-size: 26px; line-height: 28px; }
+  #content p { font-size: 14px; line-height: 16px; } }
+/* -------------------- PORTRAIT PHONES AND DOWN -------------------- */
+@media (max-width: 320px) { body { max-width: 320px !important; }
+  .wrapper { max-width: 320px !important; } }

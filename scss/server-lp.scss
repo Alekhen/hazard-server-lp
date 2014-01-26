@@ -9,6 +9,7 @@
 
 /* -------------------- PAGE HEADER -------------------- */
 #page-header {
+	color: #666;
 	@include bg(#0d0d0d);
 	@include size(null, 100);
 	.wrapper {
@@ -28,11 +29,13 @@
 	@include settings(relative, hidden, inline-block, right);
 	margin: 23px 40px 0 0;
 	ul {
-		@include settings(relative, hidden);
+		@include settings(relative);
 		li {
+			color: #e6e6e6;
 			@include settings(relative, null, inline-block, left);
 			&:after {
 				content: "|";
+				color: #666;
 				@include settings(relative, null, inline-block);
 				margin: 0 12px;
 			}
@@ -91,7 +94,6 @@
 	}
 	h1 {
 		@include font(46, 50, normal);
-		margin-bottom: 6px;
 	}
 	p {
 		span {
@@ -103,3 +105,5 @@
 		}
 	}
 }
+
+@import "responsive";
