@@ -1,0 +1,23 @@
+// GLOBAL VARIABLES AND FUNCTIONS
+
+// Font Families
+$helvetica: "Helvetica Neue", "HelveticaNeue", Helvetica, Sans-Serif;
+
+// Color Scheme
+$black: #000000;
+
+// Color Scheme Functions
+@function black($opacity) {
+	@return rgba(0,0,0,$opacity)
+}
+@function white($opacity) {
+	@return rgba(255,255,255,$opacity)
+}
+
+// Standard Page Element Colors
+$bodyTextColor: white;
+$bodyBackgroundColor: #1a1a1a;
+$linkColor: #ee6001;
+$linkHoverColor: #f79723;
+$selectionColor: black;
+$selectionBackgroundColor: #eee;

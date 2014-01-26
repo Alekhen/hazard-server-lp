@@ -1,0 +1,105 @@
+// Import Meta Data
+@import "mixins";
+@import "variables";
+
+// Import Styling
+@import "reset";
+@import "tags";
+@import "classes";
+
+/* -------------------- PAGE HEADER -------------------- */
+#page-header {
+	@include bg(#0d0d0d);
+	@include size(null, 100);
+	.wrapper {
+		vertical-align: middle;
+		border-bottom: 1px solid #666;
+	}
+}
+#logo {
+	text-indent: -9999px;
+	@include bg(null, "hazard-logo.png");
+	background-image: url(imagePath("hazard-logo.svg"));
+	@include settings(relative, hidden, inline-block, left);
+	@include size(245, 70);
+	margin-left: 40px;
+}
+#contact-links {
+	@include settings(relative, hidden, inline-block, right);
+	margin: 23px 40px 0 0;
+	ul {
+		@include settings(relative, hidden);
+		li {
+			@include settings(relative, null, inline-block, left);
+			&:after {
+				content: "|";
+				@include settings(relative, null, inline-block);
+				margin: 0 12px;
+			}
+			&:last-child {
+				&:after {
+					@include settings(null, null, none);
+				}
+			}
+			&.phone {
+
+			}
+		}
+	}
+}
+
+
+/* -------------------- PAGE FOOTER -------------------- */
+#page-footer {
+	color: #333;
+	@include font(15, 18);
+	text-align: center;
+	@include bg(#0d0d0d);
+	.wrapper {
+		padding: 20px 0;
+	}
+	p {
+		margin: 0;
+		&.inquiries {
+			color: #525252;
+			margin-bottom: 6px;
+			a {
+				color: #525252;
+				&:hover {
+					color: #999;
+				}
+			}
+		}
+		&.disclaimer {
+			@include font(13, 16);
+		}
+	}
+	a {
+		color: #333;
+		&:hover {
+			color: #999;
+		}
+	}
+}
+
+/* -------------------- PAGE CONTENT -------------------- */
+#content {
+	text-align: center;
+	@include bg-cover(null, "beast.jpg", center, 100px);
+	.wrapper {
+		vertical-align: middle;
+	}
+	h1 {
+		@include font(46, 50, normal);
+		margin-bottom: 6px;
+	}
+	p {
+		span {
+			@include settings(relative, null, block);
+			margin-bottom: 26px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

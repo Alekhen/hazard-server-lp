@@ -1,0 +1,119 @@
+/* -------------------- HTML RESET -------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* -------------------- HTML5 FIX -------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* -------------------- TAGS & PAGE ATTRIBUTES -------------------- */
+* { margin: 0; padding: 0; }
+
+html { width: 100%; height: 100%; margin: 0; }
+
+body { color: white; font: normal 18px/24px "Helvetica Neue", "HelveticaNeue", Helvetica, Sans-Serif; position: relative; overflow: auto; background: #1a1a1a url(../images/red-bg.jpg) no-repeat center center fixed; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale'); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; width: 100% !important; height: 100% !important; height: auto; min-height: 100%; margin: 0; -moz-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; }
+
+h1 { font-size: 48px; line-height: 58px; font-weight: bold; }
+
+h2 { font-size: 36px; line-height: 46px; font-weight: bold; }
+
+h3 { font-size: 24px; line-height: 32px; font-weight: bold; }
+
+h4 { font-size: 22px; line-height: 26px; font-weight: bold; }
+
+h5 { font-size: 18px; line-height: 24px; font-weight: bold; }
+
+p { margin-bottom: 24px; }
+
+a { color: #ee6001; text-decoration: none; outline: none; cursor: pointer; }
+a:hover { color: #f79723; text-decoration: underline; outline: none; cursor: pointer; }
+a:active { position: relative; top: 1px; outline: none; cursor: pointer; }
+a img { border: 0; outline: none; cursor: pointer; }
+
+ul { list-style: none; }
+
+ol { list-style: lower-alpha; }
+
+img { line-height: 0px; }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+input { outline: none; }
+
+select { outline: none; }
+
+option { outline: none; }
+
+::-moz-selection { color: black; background-color: #eeeeee; }
+
+::selection { color: black; background-color: #eeeeee; }
+
+/* -------------------- GLOBAL CLASSES -------------------- */
+.wrapper { position: relative; overflow: hidden; margin: 0 auto; width: 1200px; }
+
+.frame { display: table; width: 100%; height: 100% !important; }
+
+.row { overflow: hidden; display: table-row; height: 1px; }
+.row.expand { height: auto !important; }
+
+.cell { display: table-cell; }
+
+/* -------------------- ELEMENT POSITION STYLES -------------------- */
+.fixed { position: fixed !important; }
+
+.relative { position: relative !important; }
+
+.absolute { position: absolute !important; }
+
+.left { position: relative; float: left; }
+
+.right { position: relative; float: right; }
+
+.center { position: relative; margin-left: auto; margin-right: auto; }
+
+/* -------------------- TYPOGRAPHIC STYLES -------------------- */
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+.hide-text { text-indent: -9999px; overflow: hidden; }
+
+.bold { font-weight: bold; }
+
+.italic { font-style: italic; }
+
+.underline { text-decoration: underline; }
+
+.uppercase { text-transform: uppercase; }
+
+.lowercase { text-transform: lowercase; }
+
+/* -------------------- PAGE HEADER -------------------- */
+#page-header { background: #0d0d0d; height: 100px; }
+#page-header .wrapper { vertical-align: middle; border-bottom: 1px solid #666; }
+
+#logo { text-indent: -9999px; background: url(../images/hazard-logo.png) center center no-repeat; background-image: url("../images/hazard-logo.svg"); position: relative; overflow: hidden; display: inline-block; float: left; width: 245px; height: 70px; margin-left: 40px; }
+
+#contact-links { position: relative; overflow: hidden; display: inline-block; float: right; margin: 23px 40px 0 0; }
+#contact-links ul { position: relative; overflow: hidden; }
+#contact-links ul li { position: relative; display: inline-block; float: left; }
+#contact-links ul li:after { content: "|"; position: relative; display: inline-block; margin: 0 12px; }
+#contact-links ul li:last-child:after { display: none; }
+
+/* -------------------- PAGE FOOTER -------------------- */
+#page-footer { color: #333; font-size: 15px; line-height: 18px; text-align: center; background: #0d0d0d; }
+#page-footer .wrapper { padding: 20px 0; }
+#page-footer p { margin: 0; }
+#page-footer p.inquiries { color: #525252; margin-bottom: 6px; }
+#page-footer p.inquiries a { color: #525252; }
+#page-footer p.inquiries a:hover { color: #999; }
+#page-footer p.disclaimer { font-size: 13px; line-height: 16px; }
+#page-footer a { color: #333; }
+#page-footer a:hover { color: #999; }
+
+/* -------------------- PAGE CONTENT -------------------- */
+#content { text-align: center; background: url(../images/beast.jpg) no-repeat center 100px fixed; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale'); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; }
+#content .wrapper { vertical-align: middle; }
+#content h1 { font-size: 46px; line-height: 50px; font-weight: normal; margin-bottom: 6px; }
+#content p span { position: relative; display: block; margin-bottom: 26px; }
+#content p span:last-child { margin-bottom: 0; }
