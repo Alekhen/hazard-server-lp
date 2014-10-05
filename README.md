@@ -1,4 +1,4 @@
-hazard-server-lp
-================
+Server Default Landing Page
+===========================
 
-Hazard Media Group default server landing page for hosted domains
+Hazard Media Group server default landing page for hosted domains.
