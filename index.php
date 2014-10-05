@@ -7,7 +7,7 @@
  */
 
 $ga = '';
-$domain = $_SERVER['HTTP_HOST'];
+$domain = str_replace( 'www.', '', $_SERVER['HTTP_HOST'] );
 $host = array(
 	'name' => 'Hazard Media Group',
 	'legal_name' => 'Hazard Media Group LLC',
