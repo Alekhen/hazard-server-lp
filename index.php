@@ -6,8 +6,8 @@
  * @since 1.0
  */
 
-$ga = '';
-$domain = str_replace( 'www.', '', $_SERVER['HTTP_HOST'] );
+$domain = strtolower( str_replace( 'www.', '', $_SERVER['HTTP_HOST'] ) );
+
 $host = array(
 	'name' => 'Hazard Media Group',
 	'legal_name' => 'Hazard Media Group LLC',
@@ -16,7 +16,52 @@ $host = array(
 	'phone' => '(650) 539-9109'
 );
 
+$ga = '';
 switch( $domain ) {
+
+	case 'aboutmongolia.org' :
+		$ga = 'UA-35021181-1';
+		break;
+
+	case 'austinmahonemusic.com' :
+		$ga = 'UA-49101014-1';
+		break;
+
+	case 'endangeredlanguage.com' :
+		$ga = 'UA-45781427-1';
+		break;
+
+	case 'erdenetcarpet.com' :
+		$ga = 'UA-35028743-1';
+		break;
+
+	case 'crazyfortunecookie.com' :
+		$ga = 'UA-47165306-1';
+		break;
+
+	case 'goyocashmere.com' :
+		$ga = 'UA-35024241-1';
+		break;
+
+	case 'hazardmediagroup.com' :
+		$ga = 'UA-21682797-2';
+		break;
+
+	case 'jasonchenmusic.com' :
+		$ga = 'UA-22413889-1';
+		break;
+
+	case 'mongoldude.com' :
+		$ga = 'UA-32236084-1';
+		break;
+
+	case 'coltonjameswiscombe.com' :
+		$ga = 'UA-46115599-1';
+		break;
+
+	case 'shykidx.com' :
+		$ga = 'UA-49093112-1';
+		break;
 
 	default :
 		$ga = 'UA-55422859-1'; // hazard-media.com accnt
