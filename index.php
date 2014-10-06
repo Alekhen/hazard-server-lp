@@ -92,6 +92,12 @@ switch( $domain ) {
 	<meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
 	
 	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina.png">
+
 	<link rel="stylesheet" href="css/server-lp.css?v=1.0">
 
 	<?php if( !empty( $ga ) ) : ?>
