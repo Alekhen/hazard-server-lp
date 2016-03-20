@@ -16,59 +16,6 @@ $host = array(
 	'phone' => '(650) 539-9109'
 );
 
-$ga = '';
-switch( $domain ) {
-
-	case 'aboutmongolia.org' :
-		$ga = 'UA-35021181-1';
-		break;
-
-	case 'austinmahonemusic.com' :
-		$ga = 'UA-49101014-1';
-		break;
-
-	case 'endangeredlanguage.com' :
-		$ga = 'UA-45781427-1';
-		break;
-
-	case 'erdenetcarpet.com' :
-		$ga = 'UA-35028743-1';
-		break;
-
-	case 'crazyfortunecookie.com' :
-		$ga = 'UA-47165306-1';
-		break;
-
-	case 'goyocashmere.com' :
-		$ga = 'UA-35024241-1';
-		break;
-
-	case 'hazardmediagroup.com' :
-		$ga = 'UA-21682797-2';
-		break;
-
-	case 'jasonchenmusic.com' :
-		$ga = 'UA-22413889-1';
-		break;
-
-	case 'mongoldude.com' :
-		$ga = 'UA-32236084-1';
-		break;
-
-	case 'coltonjameswiscombe.com' :
-		$ga = 'UA-46115599-1';
-		break;
-
-	case 'shykidx.com' :
-		$ga = 'UA-49093112-1';
-		break;
-
-	default :
-		$ga = 'UA-55422859-1'; // hazard-media.com accnt
-		break;
-
-}
-
 ?><!DOCTYPE html>
 <html lang="en-US">
 
@@ -99,22 +46,6 @@ switch( $domain ) {
 	<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina.png">
 
 	<link rel="stylesheet" href="css/server-lp.css?v=1.0">
-
-	<?php if( !empty( $ga ) ) : ?>
-	<!-- GOOGLE ANALYTICS -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', <?php echo "'$ga'"; ?>, 'auto');
-		ga('send', 'pageview');
-		ga('send', 'event', 'Server Default LP', 'Page View', <?php echo "'$domain'"; ?>);
-
-	</script>
-	<!-- END - GOOGLE ANALYTICS -->
-	<?php endif; ?>
 
 </head>
 <body class="frame">
